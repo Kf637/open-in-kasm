@@ -20,7 +20,7 @@ function saveOptions() {
         status.textContent = '';
         status.classList.remove('show');
         location.reload();
-      }, 1000);
+      }, 2000);
     });
   });
 }
