@@ -1,0 +1,12 @@
+{
+  "extensionName": { "message": "Open in Kasm" },
+  "settingsSaved": { "message": "Settings saved." },
+  "kasmDomain": { "message": "Kasm Domain" },
+  "save": { "message": "Save" },
+  "info": { "message": "Info" },
+  "openIn": { "message": "Open In" },
+  "openInNewTab": { "message": "New Tab" },
+  "openInNewWindow": { "message": "New Window" },
+  "disclaimer": { "message": "Disclaimer: This is an independent project." },
+  "language": { "message": "Language" }
+}

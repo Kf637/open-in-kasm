@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Open in Kasm",
-  "version": "1.0",
-  "description": "Adds a context menu item to open pages in Kasm.",
+  "version": "1.3",
+  "description": "Adds context menu items to open pages in Kasm.",
   "permissions": [
     "contextMenus",
     "storage"
@@ -10,6 +10,7 @@
   "background": {
     "service_worker": "background.js"
   },
+  "default_locale": "en",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
