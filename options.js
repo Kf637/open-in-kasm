@@ -10,7 +10,8 @@ document.getElementById('info').addEventListener('click', () => {
 function saveOptions() {
   const domain = document.getElementById('domain').value;
   const language = document.getElementById('language').value;
-  chrome.storage.sync.set({ domain, language }, () => {
+  const openMethod = document.getElementById('openMethod').value;
+  chrome.storage.sync.set({ domain, language, openMethod }, () => {
     loadMessages((msgs) => {
       const status = document.getElementById('status');
       status.textContent = msgs.settingsSaved.message;
@@ -18,18 +19,23 @@ function saveOptions() {
       setTimeout(() => {
         status.textContent = '';
         status.classList.remove('show');
+        location.reload();
       }, 2000);
     });
   });
 }
 
 function restoreOptions() {
-  chrome.storage.sync.get(['domain', 'language'], (items) => {
+  chrome.storage.sync.get(['domain', 'language', 'openMethod'], (items) => {
     const input = document.getElementById('domain');
     input.value = items.domain || '';
     const langSelect = document.getElementById('language');
     if (langSelect) {
       langSelect.value = items.language || 'system';
+    }
+    const openSelect = document.getElementById('openMethod');
+    if (openSelect) {
+      openSelect.value = items.openMethod || 'tab';
     }
   });
 }
@@ -38,6 +44,9 @@ function localize() {
   loadMessages((msgs) => {
     document.querySelector('h1').textContent = msgs.extensionName.message;
     document.querySelector('label[for="domain"]').textContent = msgs.kasmDomain.message;
+    document.querySelector('label[for="openMethod"]').textContent = msgs.openIn.message;
+    document.querySelector('#openMethod option[value="tab"]').textContent = msgs.openInNewTab.message;
+    document.querySelector('#openMethod option[value="window"]').textContent = msgs.openInNewWindow.message;
     document.querySelector('label[for="language"]').textContent = msgs.language.message;
     document.querySelector('#language option[value="system"]').textContent = msgs.systemDefault.message;
     document.getElementById('save').textContent = msgs.save.message;

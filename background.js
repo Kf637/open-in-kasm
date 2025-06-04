@@ -30,15 +30,18 @@ chrome.storage.onChanged.addListener((changes) => {
 });
 
 chrome.contextMenus.onClicked.addListener((info) => {
-  if (!info.menuItemId.startsWith('open_in_kasm_')) return;
+  if (!info.menuItemId.startsWith('open_in_kasm')) return;
   let url = info.linkUrl || info.pageUrl || info.selectionText;
   if (info.selectionText) {
     url = info.selectionText.startsWith('http') ? info.selectionText : '';
   }
   if (!url) return;
-  chrome.storage.sync.get({ domain: 'https://kasm.example.com' }, (items) => {
+  chrome.storage.sync.get({ domain: 'https://kasm.example.com', openMethod: 'tab' }, (items) => {
     const kasmUrl = `${items.domain}/#/go?kasm_url=${encodeURIComponent(url)}`;
-    if (info.menuItemId === 'open_in_kasm_window') {
+    const target = info.menuItemId === 'open_in_kasm_window' ? 'window'
+      : info.menuItemId === 'open_in_kasm_tab' ? 'tab'
+      : items.openMethod;
+    if (target === 'window') {
       chrome.windows.create({ url: kasmUrl });
     } else {
       chrome.tabs.create({ url: kasmUrl });

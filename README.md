@@ -15,11 +15,12 @@ The extension is localized and will automatically use your browser's language wh
 1. Open `chrome://extensions` and locate **Open in Kasm**.
 2. Click **Details** and then **Extension options** to open the options page.
 3. Enter the URL of your Kasm instance (e.g. `https://kasm.example.com`).
-4. Choose your preferred language or leave **System Default** to follow your browser settings and click **Save**.
+4. Pick whether new pages open in a tab or window, choose your preferred language (or leave **System Default**), and click **Save**.
+5. Choose your preferred language or leave **System Default** to follow your browser settings and click **Save**.
 
 ## Usage
 
-Right-click on a page, link, or selected text and choose **Open In**. Then pick **New Tab** or **New Window** to launch the page through your configured Kasm instance.
+Right-click on a page, link, or selected text and choose **Open In**. Pick **New Tab** or **New Window**, or just click **Open In** to use your default, to launch the page through your configured Kasm instance.
 
 ## Development
 
