@@ -4,7 +4,7 @@
   "kasmDomain": { "message": "Domaine Kasm" },
   "save": { "message": "Enregistrer" },
   "info": { "message": "Info" },
-  "openIn": { "message": "Ouvrir dans" },
+  "openIn": { "message": "Ouvrir dans Kasm" },
   "openInNewTab": { "message": "Nouvel onglet" },
   "openInNewWindow": { "message": "Nouvelle fenêtre" },
   "disclaimer": { "message": "Avertissement : Ceci est un projet indépendant." },

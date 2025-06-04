@@ -12,8 +12,6 @@ function loadMessages(cb) {
 function createMenus(msgs) {
   const contexts = ["link", "page", "selection"];
   chrome.contextMenus.create({ id: "open_in_kasm", title: msgs.openIn.message, contexts });
-  chrome.contextMenus.create({ id: "open_in_kasm_tab", parentId: "open_in_kasm", title: msgs.openInNewTab.message, contexts });
-  chrome.contextMenus.create({ id: "open_in_kasm_window", parentId: "open_in_kasm", title: msgs.openInNewWindow.message, contexts });
 }
 
 function setupMenus() {
