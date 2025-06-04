@@ -1,0 +1,11 @@
+{
+  "extensionName": { "message": "\u00c5pne i Kasm" },
+  "settingsSaved": { "message": "Innstillinger lagret." },
+  "kasmDomain": { "message": "Kasm-domene" },
+  "save": { "message": "Lagre" },
+  "info": { "message": "Info" },
+  "openIn": { "message": "\u00c5pne i" },
+  "openInNewTab": { "message": "Nytt faneark" },
+  "openInNewWindow": { "message": "Nytt vindu" },
+  "disclaimer": { "message": "Ansvarsfraskrivelse: Dette er et uavhengig prosjekt." }
+}
