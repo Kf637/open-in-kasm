@@ -1,0 +1,16 @@
+{
+  "name": "open-in-kasm",
+  "version": "1.0.0",
+  "description": "This extension adds a context menu item \"Open in Kasm\" when you right-click on any page, link, or selected text. Clicking it will open the URL in Kasm.",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdom": "^26.1.0"
+  }
+}
