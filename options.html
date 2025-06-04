@@ -56,6 +56,16 @@
       border-color: #007bff;
       outline: none;
     }
+    select {
+      width: 100%;
+      padding: 8px;
+      font-size: 1em;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background: #fff;
+    }
     button {
       background-color: #007bff;
       color: #fff;
@@ -112,6 +122,18 @@
     <div class="field">
       <label for="domain">__MSG_kasmDomain__</label>
       <input type="text" id="domain" placeholder="https://kasm.example.com" />
+    </div>
+    <div class="field">
+      <label for="language">__MSG_language__</label>
+      <select id="language">
+        <option value="system">__MSG_systemDefault__</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="nb">Norsk</option>
+        <option value="sv">Svenska</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+      </select>
     </div>
     <div class="button-group">
       <button id="save">__MSG_save__</button>
