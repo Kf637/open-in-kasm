@@ -9,7 +9,11 @@ function saveOptions() {
   chrome.storage.sync.set({ domain }, () => {
     const status = document.getElementById('status');
     status.textContent = 'Settings saved.';
-    setTimeout(() => { status.textContent = ''; }, 2000);
+    status.classList.add('show');
+    setTimeout(() => {
+      status.textContent = '';
+      status.classList.remove('show');
+    }, 2000);
   });
 }
 
@@ -23,3 +27,4 @@ function restoreOptions() {
     }
   });
 }
+
