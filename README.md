@@ -1,6 +1,8 @@
 # Open in Kasm Chrome Extension
 
-This extension adds a context menu item "Open in Kasm" when you right-click on any page, link, or selected text. Clicking it will open the URL in Kasm.
+This extension adds context menu items under **Open In** when you right-click on any page, link or selected text. You can choose to open the URL in Kasm in a new tab or a new window.
+
+The extension is localized and will automatically use your browser's language when available. It currently includes translations for English, Spanish, Norwegian, and Swedish.
 
 ## Installation
 
@@ -16,7 +18,7 @@ This extension adds a context menu item "Open in Kasm" when you right-click on a
 
 ## Usage
 
-Right-click on a page, link, or selected text and choose "Open in Kasm".
+Right-click on a page, link, or selected text and choose **Open In**. Then pick **New Tab** or **New Window** to launch the page through your configured Kasm instance.
 
 ## Development
 

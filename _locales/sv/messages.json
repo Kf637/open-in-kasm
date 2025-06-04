@@ -1,0 +1,11 @@
+{
+  "extensionName": { "message": "\u00d6ppna i Kasm" },
+  "settingsSaved": { "message": "Inst\u00e4llningar sparade." },
+  "kasmDomain": { "message": "Kasm-dom\u00e4n" },
+  "save": { "message": "Spara" },
+  "info": { "message": "Info" },
+  "openIn": { "message": "\u00d6ppna i" },
+  "openInNewTab": { "message": "Ny flik" },
+  "openInNewWindow": { "message": "Nytt f\u00f6nster" },
+  "disclaimer": { "message": "Ansvarsfriskrivning: Detta \u00e4r ett oberoende projekt." }
+}
