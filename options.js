@@ -15,6 +15,7 @@ function saveOptions() {
       status.classList.remove('show');
     }, 2000);
   });
+}
 
 function restoreOptions() {
   chrome.storage.sync.get('domain', (items) => {
