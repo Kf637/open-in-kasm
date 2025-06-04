@@ -1,0 +1,13 @@
+{
+  "extensionName": { "message": "Ouvrir dans Kasm" },
+  "settingsSaved": { "message": "Paramètres enregistrées." },
+  "kasmDomain": { "message": "Domaine Kasm" },
+  "save": { "message": "Enregistrer" },
+  "info": { "message": "Info" },
+  "openIn": { "message": "Ouvrir dans" },
+  "openInNewTab": { "message": "Nouvel onglet" },
+  "openInNewWindow": { "message": "Nouvelle fenêtre" },
+  "disclaimer": { "message": "Avertissement : Ceci est un projet indépendant." },
+  "language": { "message": "Langue" },
+  "systemDefault": { "message": "Langue du système" }
+}

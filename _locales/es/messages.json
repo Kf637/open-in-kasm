@@ -1,11 +1,35 @@
 {
-  "extensionName": { "message": "Abrir en Kasm" },
-  "settingsSaved": { "message": "Configuraci\u00f3n guardada." },
-  "kasmDomain": { "message": "Dominio de Kasm" },
-  "save": { "message": "Guardar" },
-  "info": { "message": "Informaci\u00f3n" },
-  "openIn": { "message": "Abrir En" },
-  "openInNewTab": { "message": "Nueva Pesta\u00f1a" },
-  "openInNewWindow": { "message": "Nueva Ventana" },
-  "disclaimer": { "message": "Descargo de responsabilidad: Este es un proyecto independiente." }
+  "extensionName": {
+    "message": "Abrir en Kasm"
+  },
+  "settingsSaved": {
+    "message": "Configuración guardada."
+  },
+  "kasmDomain": {
+    "message": "Dominio de Kasm"
+  },
+  "save": {
+    "message": "Guardar"
+  },
+  "info": {
+    "message": "Información"
+  },
+  "openIn": {
+    "message": "Abrir En"
+  },
+  "openInNewTab": {
+    "message": "Nueva Pestaña"
+  },
+  "openInNewWindow": {
+    "message": "Nueva Ventana"
+  },
+  "disclaimer": {
+    "message": "Descargo de responsabilidad: Este es un proyecto independiente."
+  },
+  "language": {
+    "message": "Idioma"
+  },
+  "systemDefault": {
+    "message": "Predeterminado del sistema"
+  }
 }
