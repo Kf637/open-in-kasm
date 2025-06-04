@@ -17,3 +17,13 @@ This extension adds a context menu item "Open in Kasm" when you right-click on a
 ## Usage
 
 Right-click on a page, link, or selected text and choose "Open in Kasm".
+
+## Development
+
+The repository includes a CodeQL workflow for static analysis. If this repository already has CodeQL configured using GitHub's default setup, you need to disable the default setup in the repository's security settings. Otherwise, GitHub will reject the uploaded SARIF file with an error similar to:
+
+```
+CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled
+```
+
+After disabling the default setup, the workflow defined in `.github/workflows/codeql.yml` will install dependencies, run tests, and upload the CodeQL results.
