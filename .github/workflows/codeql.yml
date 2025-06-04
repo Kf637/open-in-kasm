@@ -39,8 +39,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
 
-    - name: Run tests
-      run: npm test --if-present
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

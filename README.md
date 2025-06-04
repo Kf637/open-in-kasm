@@ -26,4 +26,4 @@ The repository includes a CodeQL workflow for static analysis. If this repositor
 CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled
 ```
 
-After disabling the default setup, the workflow defined in `.github/workflows/codeql.yml` will install dependencies, run tests, and upload the CodeQL results.
+After disabling the default setup, the workflow defined in `.github/workflows/codeql.yml` will install dependencies and upload the CodeQL results.
