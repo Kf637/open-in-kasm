@@ -5,13 +5,13 @@ const { JSDOM } = require('jsdom');
 
 describe('restoreOptions', () => {
   test('populates domain input when value is stored', () => {
-    const html = `\n      <input id="domain">\n      <div id="status"></div>\n      <button id="save"></button>\n      <button id="info"></button>\n    `;
+    const html = `\n      <input id="domain">\n      <select id="openMethod"><option value="tab"></option><option value="window"></option></select>\n      <div id="status"></div>\n      <button id="save"></button>\n      <button id="info"></button>\n    `;
     const dom = new JSDOM(html);
 
     const chrome = {
       storage: {
         sync: {
-          get: jest.fn((key, cb) => cb({ domain: 'example.com' }))
+          get: jest.fn((key, cb) => cb({ domain: 'example.com', openMethod: 'window' }))
         }
       }
     };
@@ -31,5 +31,7 @@ describe('restoreOptions', () => {
 
     const input = dom.window.document.getElementById('domain');
     expect(input.value).toBe('example.com');
+    const openSel = dom.window.document.getElementById('openMethod');
+    expect(openSel.value).toBe('window');
   });
 });

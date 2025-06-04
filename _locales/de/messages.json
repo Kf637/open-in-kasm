@@ -1,0 +1,13 @@
+{
+  "extensionName": { "message": "In Kasm öffnen" },
+  "settingsSaved": { "message": "Einstellungen gespeichert." },
+  "kasmDomain": { "message": "Kasm-Domain" },
+  "save": { "message": "Speichern" },
+  "info": { "message": "Info" },
+  "openIn": { "message": "Öffnen in" },
+  "openInNewTab": { "message": "Neuer Tab" },
+  "openInNewWindow": { "message": "Neues Fenster" },
+  "disclaimer": { "message": "Haftungsausschluss: Dies ist ein unabhängiges Projekt." },
+  "language": { "message": "Sprache" },
+  "systemDefault": { "message": "Systemsprache" }
+}
